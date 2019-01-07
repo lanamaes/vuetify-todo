@@ -20,7 +20,7 @@
         </v-navigation-drawer>
 
         -->
-        
+
         <!--lesson 10 lists-->
         <v-navigation-drawer v-model="drawer" app class="primary">
             <v-list>
