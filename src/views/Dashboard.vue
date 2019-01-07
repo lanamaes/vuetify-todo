@@ -5,16 +5,26 @@
     <!-- lesson 12 padding and margin -->
     <v-container class="my-5">
 
-      <!-- lesson 17 sorting projects, see js sort method-->
+      <!-- lesson 17 sorting projects, see js sort method + 18 tooltips-->
+
       <v-layout row class="mb-3">
-        <v-btn small flat color="grey" @click="sortBy('title')">
-          <v-icon left small>folder</v-icon>
-          <span class="caption text-lowercase">By project name</span>
-        </v-btn>
-        <v-btn small flat color="grey" @click="sortBy('person')">
-          <v-icon left small>person</v-icon>
-          <span class="caption text-lowercase">By person</span>
-        </v-btn>
+
+        <v-tooltip top>
+          <v-btn small flat color="grey" @click="sortBy('title')" slot="activator">
+            <v-icon left small>folder</v-icon>
+            <span class="caption text-lowercase">By project name</span>
+          </v-btn>
+          <span>Sort projects by project name</span>
+        </v-tooltip>
+
+        <v-tooltip top>
+          <v-btn small flat color="grey" @click="sortBy('person')" slot="activator">
+            <v-icon left small>person</v-icon>
+            <span class="caption text-lowercase">By person</span>
+          </v-btn>
+          <span>Sort projects by person</span>
+        </v-tooltip>
+
       </v-layout>
 
       <!--lesson 13/14 grid system + 15 data + 16 chips -->
